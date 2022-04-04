@@ -12,7 +12,6 @@ df = pd.read_csv('dados_de_credito.csv')
 s = pcc.setup(data = df, target = 'INADIMPLENCIA', silent = True, use_gpu = True)
 best = pcc.compare_models(cross_validation = False)
 predictions = pcc.predict_model(best, data=df, raw_score=True)
-modelo = pcc.save_model(best, 'my_best_classifier')
 
 #Layout do site
 image = Image.open('fastapproval.png')
