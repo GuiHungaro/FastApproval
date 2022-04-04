@@ -1,0 +1,5 @@
+streamlit
+pycaret[full]
+pandas
+pillow
+pip==22.0.4
