@@ -68,9 +68,8 @@ with st.expander("Métricas de avaliação do modelo:"):
   st.write(predictions)
 
   st.write('Avaliação gráfica do Modelo:')
-
   plots_class = st.multiselect(label = "Métricas de Classificação", 
                                options = ['auc','pr','confusion_matrix','error','class_report','boundary', 'feature'],
                                default = ['auc','pr','confusion_matrix','error','class_report','boundary', 'feature'])
 
- plot_charts(best, plots_class, pcc)
+  plot_charts(best, plots_class, pcc)
