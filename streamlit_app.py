@@ -11,7 +11,7 @@ image = Image.open('fastapproval.png')
 st.image(image, caption='')
 st.title("Sistema de aprovação rápida de crédito")
 
-if st.button("Iniciar o aplicativo")
+if st.button("Iniciar o aplicativo"):
 
   #Carregando o df 
   df = pd.read_csv('dados_de_credito.csv')
