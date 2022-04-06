@@ -24,7 +24,6 @@ predictions = pcc.predict_model(best, data=df, raw_score=True)
 
 
 #Criando função para plotar os gráficos
-@st.experimental_singleton(suppress_st_warning=True)
 def plot_charts(model, plots, package):
   for i in plots:
     try:
