@@ -35,7 +35,7 @@ def plot_charts(model, plots, package):
 
 
 #Criando a predição de crédito
- with st.expander("Predição de crédito"):
+with st.expander("Predição de crédito"):
 
   #Coletando dados para serem preditos
   salario = st.number_input("Salário", value=0)
