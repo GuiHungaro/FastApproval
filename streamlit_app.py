@@ -53,10 +53,10 @@ with st.expander("Predição de crédito"):
     #Exibindo o resultado da predição
     label = nova_predicao.Label.iloc[-1]
     if label == 0:
-      st.subheader("Crédito aprovado") 
+      st.success("Crédito aprovado") 
 
     else:
-      st.subheader("Crédito reprovado")       
+      st.error("Crédito reprovado")       
 
 
 #Criando o método de avaliação do modelo
