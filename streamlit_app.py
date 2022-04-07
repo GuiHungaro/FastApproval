@@ -18,7 +18,7 @@ df = pd.read_csv('dados_de_credito.csv')
 
 
 #Carregando o modelo de classificação
-s = pcc.setup(data = df, target = 'INADIMPLENCIA', silent = True, fix_imbalance = True)
+s = pcc.setup(data = df, target = 'INADIMPLENCIA', silent = True, use_gpu = True, fix_imbalance = True)
 best = pcc.compare_models(cross_validation = False)
 predictions = pcc.predict_model(best, data=df, raw_score=True)
 
