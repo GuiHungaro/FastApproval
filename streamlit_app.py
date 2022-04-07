@@ -24,6 +24,7 @@ predictions = pcc.predict_model(best, data=df, raw_score=True)
 
 
 #Criando função para plotar os gráficos
+@st.cache(suppress_st_warning=True)
 def plot_charts(model, plots, package):
   for i in plots:
     try:
@@ -60,6 +61,7 @@ with st.expander("Predição de crédito"):
 
 #Criando o método de avaliação do modelo
 with st.expander("Métricas de avaliação do modelo:"):
+  
   st.write('O melhor modelo para representar os seus dados é:')
   st.write(best)
 
