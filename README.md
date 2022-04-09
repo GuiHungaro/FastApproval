@@ -28,3 +28,5 @@ Caso queira analisar como está o desempenho do modelo deixei separado uma parte
 * Este projeto é apenas uma brincadeira para integrar a biblioteca PyCaret com o Streamlit e rodar um aplicativo de classificação de crédito. O aplicativo em si não possuí nenhuma aplicação comercial na forma como esta. 
 
 * O aplicativo está um pouco pesado e as vezes demora para carregar.
+
+* Agradeço ao [Thiago Ferraz](https://github.com/dulei711) pelo excelente trabalho com a biblioteca PyCaret, parte do código utilizado neste projeto veio de um projeto dele. 
